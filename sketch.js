@@ -9,7 +9,7 @@ let pic = 1;
 let test = 1;
 
 function setup() {
-  createCanvas(x, y);
+  createCanvas(windowWidth, y);
 	
 	for(i = 0; i < 23; i++ ) {
 	print(i);
@@ -48,6 +48,10 @@ function draw() {
 	//Geeft het nodige plaatje.
 	let pick = selectPicture(pic);
 	
-	image(rutger[pick], 0, 0, x, y);
+	image(rutger[pick], windowWidth / 2 - x / 2, 0, x, y);
 	
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, y);
 }
