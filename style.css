@@ -2,22 +2,21 @@ html, body {
   height: 100%;
 }
 
-.canv {
+body {
   margin: 0;
   display: flex;
 
   /* This centers our sketch horizontally. */
   justify-content: center;
-
-  /* This centers our sketch vertically. */
-  align-items: center;
 }
   
-  .center {
+  .centered {
   margin: auto;
   width: 50%;
-  border: 3px solid green;
+  allign-items: down;
+  border: 2px solid #3823ec;
   padding: 10px;
+  position: relative;
 }
 
 
