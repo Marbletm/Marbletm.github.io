@@ -3,7 +3,7 @@ var rutger = [null];
 let x = 740;
 let y = 896;
 
-let inst = x / 23;
+let inst = x / 10;
 let name;
 let pic = 1;
 let test = 1;
