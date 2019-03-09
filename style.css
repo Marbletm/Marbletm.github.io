@@ -11,4 +11,14 @@ body {
 
   /* This centers our sketch vertically. */
   align-items: center;
+  
+  .center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
 }
+  
+}
+
+
