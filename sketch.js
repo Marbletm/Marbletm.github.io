@@ -10,7 +10,7 @@ let test = 1;
 
 function setup() {
   createCanvas(windowWidth, y);
-	background("#fcc2ff");
+	
 	
 	for(i = 0; i < 23; i++ ) {
 	print(i);
@@ -40,7 +40,7 @@ function selectPicture(num) {
 
 
 function draw() {
-  background(220);
+  background("#fcc2ff");
 	
 	//Geeft de x positie van de muis.
 	pic = mouseX / inst;
