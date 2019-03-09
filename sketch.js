@@ -3,7 +3,7 @@ var rutger = [null];
 let x = 740;
 let y = 896;
 
-let inst = x / 46;
+let inst = x / 23;
 let name;
 let pic = 1;
 let test = 1;
@@ -14,25 +14,25 @@ function setup() {
 	
 	for(i = 0; i < 23; i++ ) {
 	print(i);
-	rutger[i] = loadImage("rut/rut" + i + ".jpg");
+	rutger[i] = loadImage("alternative_rut/rut" + i + ".jpg");
 		
 	}
 
-	rutger[23] = loadImage("rut/rut0.jpg");
+	rutger[23] = loadImage("alternative_rut/rut0.jpg");
 
 }
 
 function selectPicture(num) {
 	
-	if(num > 23) {
+	if(num > 5) {
 		
-		num = num - 24;
+		num = num - 6;
 		
-		if(num > 23) num = selectPicture(num);
+		if(num > 5) num = selectPicture(num);
 		
 	} else { num -= 1; }
 	
-	if(num <= 0) { num = 23; } 
+	if(num <= 0) { num = 5; } 
 	
 	return num;
 }
