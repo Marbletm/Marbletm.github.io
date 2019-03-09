@@ -5,7 +5,7 @@
     text += x.elements[i].value + ", ";
   }
   
-var fh = fopen("..\data.txt\", 3); // Open the file for writing
+var fh = fopen(".\data.txt", 3); // Open the file for writing
 
 if(fh!=-1) // If the file has been successfully opened
 
