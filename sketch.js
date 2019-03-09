@@ -14,11 +14,11 @@ function setup() {
 	
 	for(i = 0; i < 23; i++ ) {
 	print(i);
-	rutger[i] = loadImage("alternative_rut/rut" + i + ".jpg");
+	rutger[i] = loadImage("alternative_rut/rut" + i + ".jpeg");
 		
 	}
 
-	rutger[23] = loadImage("alternative_rut/rut0.jpg");
+	rutger[23] = loadImage("alternative_rut/rut0.jpeg");
 
 }
 
