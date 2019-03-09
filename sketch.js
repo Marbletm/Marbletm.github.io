@@ -12,13 +12,13 @@ function setup() {
   createCanvas(windowWidth, y);
 	
 	
-	for(i = 0; i < 23; i++ ) {
+	for(i = 0; i < 5; i++ ) {
 	print(i);
 	rutger[i] = loadImage("alternative_rut/rut" + i + ".jpeg");
 		
 	}
 
-	rutger[23] = loadImage("alternative_rut/rut0.jpeg");
+	rutger[5] = loadImage("alternative_rut/rut0.jpeg");
 
 }
 
