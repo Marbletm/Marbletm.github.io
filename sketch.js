@@ -10,6 +10,7 @@ let test = 1;
 
 function setup() {
   createCanvas(windowWidth, y);
+	background("#fcc2ff");
 	
 	for(i = 0; i < 23; i++ ) {
 	print(i);
