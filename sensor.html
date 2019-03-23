@@ -1,0 +1,31 @@
+﻿<!doctype html>
+
+<html>
+	<head>
+		<title>Bodemvocht Metingen</title>
+	</head>
+
+    <body>
+        <?php
+        $sensor_data = $_POST["data"];
+        $key = $_POST["key"];
+
+        $server_file = fopen("key.txt", "r") or die("Unable to open file!");
+        $server_key = fgets($server_file);
+
+        if($server_key == $key){
+        $datafile = fopen("data.txt", "w") or die("Unable to open file!");
+        $new_string = $sensor_data . "\n";
+        fwrite($datafile, $new_string);
+        fclose($datafile);
+        }
+        ?>
+        <center>
+            <p>Welcome to the mock-up website for the data processing of our moisture sensing module.</p>
+            <a href="file:///C:/Users/lisas/Desktop/Noah%20School/schematics.html">Schematics</a>
+        </center>
+
+        <iframe>This browser doesn't support iFrames.</iframe>
+
+    </body>
+</html>
